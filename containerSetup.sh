@@ -1,5 +1,10 @@
 #! /bin/bash
 
+if [[ $# -eq 0 ]] ; then
+    echo 'No parameter passed: rememeber to pass the name of the container!'
+    exit 0
+fi
+
 lxc stop $1
 
 # enable USB connection to radio
