@@ -1,8 +1,11 @@
 #! /bin/bash
 
-if [[ $# -eq 0 ]] ; then
+if [[ $# -eq 0 ]]; then
     echo 'No parameter passed: rememeber to pass the name of the container!'
     exit 0
+elif [[ ! $# -eq 1 ]]; then
+    echo 'Too many parameters passed, retry'
+    exit 1
 fi
 
 lxc stop $1
