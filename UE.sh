@@ -9,4 +9,5 @@ elif [[ ! $# -eq 1 ]]; then
 fi
 
 sudo ip route add 10.241.115.0/24 via 240.84.80.231
+lxc restart $1
 lxc exec $1 bash
