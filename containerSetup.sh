@@ -8,6 +8,7 @@ fi
 lxc stop $1
 
 # enable USB connection to radio
+echo 'Trying to add radio device...'
 lxc config set $1 raw.lxc "lxc.cgroup.devices.allow=c 189:* rwm"
 lxc config device add $1 b210usb usb mode="0777"
 
