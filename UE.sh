@@ -8,6 +8,10 @@ elif [[ ! $# -eq 1 ]]; then
     exit 1
 fi
 
+# IP RULES
+# 1 - reroute traffic going to gnb bridge network
+#     through gnb container LTE interface
+
 # MATTEO
 #sudo ip route add 10.241.115.0/24 via 240.84.80.231
 

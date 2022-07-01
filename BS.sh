@@ -8,6 +8,12 @@ elif [[ ! $# -eq 1 ]]; then
 	exit 1
 fi
 
+# IP RULES
+# 1 - reroute traffic going to ue container LTE network
+#     through gnb container LTE interface
+# 2 - reroute traffic going to ue bridge network
+#     through gnb container LTE interface
+
 # MATTEO
 #sudo ip route add 172.16.0.0/24 via 10.241.115.153
 #sudo ip route add 240.0.0.0/8 via 10.241.115.153
