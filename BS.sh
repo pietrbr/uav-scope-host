@@ -20,7 +20,7 @@ fi
 
 # PIETRO
 sudo ip route add 172.16.0.0/24 via 10.244.105.96
-sudo ip route add 10.76.105.0/8 via 10.244.105.96
+sudo ip route add 10.76.105.0/24 via 10.244.105.96
 #sudo ip route add 240.0.0.0/8 via 10.244.105.96
 
 lxc restart $1
