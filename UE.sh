@@ -17,6 +17,7 @@ fi
 
 # PIETRO
 sudo ip route add 10.244.105.0/24 via 10.76.105.68
+#------- extra rules for Pietro: to test
 #sudo ip route add 10.244.105.0/24 via 240.84.80.51
 ##sudo ip route add 172.16.0.0/24 via 240.84.80.51
 
