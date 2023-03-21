@@ -8,6 +8,10 @@ elif [[ ! $# -eq 1 ]]; then
     exit 1
 fi
 
+# Assign IP addresses to variables
+echo "Set IP variables in bash"
+bash addIPvars.sh
+
 # IP RULES
 # 1 - reroute traffic going to gnb bridge network
 #     through gnb container LTE interface

@@ -15,4 +15,6 @@ The file `addIPvars.sh` is used to add the IP variables for the computers in the
 
 ## Instructions to setup the network
 
+`containerSetup.sh` must be run only once after creating the container as to grant the necessary rights for accessing the USB ports and other stuff.
+
 Assuming the software is installed properly, it is sufficient to run the `BS.sh` scripts on the BS, or the `UE.sh` on the UE.
