@@ -13,14 +13,8 @@ fi
 #     through gnb container LTE interface
 # 2 - reroute traffic going to ue bridge network
 #     through gnb container LTE interface
-
-# MATTEO
-sudo ip route add 172.16.0.0/24 via 10.241.115.153
-sudo ip route add 10.228.150.0/24 via 10.241.115.153
-
-# PIETRO
-#sudo ip route add 172.16.0.0/24 via 10.244.105.96
-#sudo ip route add 10.76.105.0/24 via 10.244.105.96
+sudo ip route add $IP_B0 via $IP_A153
+sudo ip route add $IP_C0 via $IP_A153
 
 lxc restart $1
 lxc exec $1 bash
