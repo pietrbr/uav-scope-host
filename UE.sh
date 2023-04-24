@@ -10,7 +10,7 @@ fi
 
 # Assign IP addresses to variables
 echo "Set IP variables in bash"
-bash addIPvars.sh
+source addIPvars.sh
 
 # IP RULES
 # 1 - reroute traffic going to gnb bridge network

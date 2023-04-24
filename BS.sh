@@ -10,15 +10,15 @@ fi
 
 # Assign IP addresses to variables
 echo "Set IP variables in bash"
-bash addIPvars.sh
+source addIPvars.sh
 
 # IP RULES
 # 1 - reroute traffic going to ue container LTE network
 #     through gnb container LTE interface
 # 2 - reroute traffic going to ue bridge network
 #     through gnb container LTE interface
-sudo ip route add $IP_B0 via $IP_A153
-sudo ip route add $IP_C0 via $IP_A153
+sudo ip route add $IP_B0 via $IP_A2
+sudo ip route add $IP_C0 via $IP_A2
 
 lxc restart $1
 lxc exec $1 bash
